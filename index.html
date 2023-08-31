@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <div class="calculator">
+    <input type="text" id="display" disabled>
+    <div class="buttons">
+      <button onclick="appendToDisplay('7')" class="num">7</button>
+      <button onclick="appendToDisplay('8')" class="num">8</button>
+      <button onclick="appendToDisplay('9')" class="num">9</button>
+      <button class="operador">*</button>
+      <button onclick="appendToDisplay('4')" class="num">4</button>
+      <button onclick="appendToDisplay('5')" class="num">5</button>
+      <button onclick="appendToDisplay('6')" class="num">6</button>
+      <button class="operador">/</button>
+      <button onclick="appendToDisplay('1')" class="num">1</button>
+      <button onclick="appendToDisplay('2')" class="num">2</button>
+
+      <!--<button class="operador">.</button>-->
+      <button onclick="appendToDisplay('3')" class="num">3</button>
+      <button class="operador">-</button>
+      <button id="clear" onclick="clearToDisplay()">C</button>
+      <button onclick="appendToDisplay('0')" class="num">0</button>
+      <button id="equals" onclick="calculate()">=</button>
+      <button class="operador">+</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
